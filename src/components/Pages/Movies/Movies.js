@@ -25,10 +25,10 @@ const Movies = () => {
   }
 
   useEffect(() => {
-    fetchMovies()
+    setPagination(1);
+    fetchMovies();
     // eslint-disable-next-line
-
-  }, [pagination, serialNumber ])
+  }, [serialNumber]);
   
   return (
     <div>
